@@ -1,0 +1,13 @@
+<!ELEMENT svg (g)>
+<!ATTLIST svg version NMTOKEN #REQUIRED>
+<!ATTLIST svg id NMTOKEN #REQUIRED>
+<!ATTLIST svg x NMTOKEN #REQUIRED>
+<!ATTLIST svg y NMTOKEN #REQUIRED>
+<!ATTLIST svg width NMTOKEN #REQUIRED>
+<!ATTLIST svg height NMTOKEN #REQUIRED>
+<!ATTLIST svg viewBox CDATA #REQUIRED>
+<!ATTLIST svg enable-background CDATA #REQUIRED>
+<!ELEMENT g (linearGradient*,polygon*,g*,defs?,clipPath?,path?)>
+<!ELEMENT linearGradient (stop+)>
+<!ATTLIST linearGradient id NMTOKEN #REQUIRED>
+<!ATTLIST linearGradient gradientUnits NMTOKEN #FIXED "userSpaceOnUse"><!ATTLIST linearGradient x1 NMTOKEN #REQUIRED><!ATTLIST linearGradient y1 NMTOKEN #FIXED "-471.7104"><!ATTLIST linearGradient x2 NMTOKEN #REQUIRED><!ATTLIST linearGradient y2 NMTOKEN #FIXED "-365.8784"><!ATTLIST linearGradient gradientTransform CDATA #FIXED "matrix(1.98 0 0 -1.98 402.04 -684.3301)"><!ELEMENT stop EMPTY><!ATTLIST stop offset (0|1) #REQUIRED><!ATTLIST stop style CDATA #REQUIRED><!ELEMENT polygon EMPTY><!ATTLIST polygon fill CDATA #REQUIRED><!ATTLIST polygon points CDATA #REQUIRED><!ATTLIST polygon clip-path CDATA #IMPLIED><!ELEMENT defs (path)><!ELEMENT path EMPTY><!ATTLIST path id NMTOKEN #IMPLIED><!ATTLIST path d CDATA #REQUIRED><!ATTLIST path clip-path CDATA #IMPLIED><!ATTLIST path fill CDATA #IMPLIED><!ELEMENT clipPath (use)><!ATTLIST clipPath id NMTOKEN #REQUIRED><!ELEMENT use EMPTY><!ATTLIST use overflow NMTOKEN #FIXED "visible">
