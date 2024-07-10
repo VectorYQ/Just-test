@@ -12,14 +12,14 @@ function updateCode() {
 const htmlSolution = `<h1>静夜思</h1>
 <p>床前明月光 疑是地上霜</p>
 <p>举头望明月 低头思故乡</p>
-<p>道可道 非常道 <P>
-<P>名可名 非常名<P>
-<P>无 名天地之始<P>
-<P>有 名万物之母<P>
-<P>故常无 欲以观其妙<P>
-<P>常有 欲以观其徼(jiào)<P>
-<P>此两者 同出而异名 同谓之玄<p>
-<p>玄之又玄 众妙之门<P>
+<p>道可道 非常道 </P>
+<P>名可名 非常名</P>
+<P>无 名天地之始</P>
+<P>有 名万物之母</P>
+<P>故常无 欲以观其妙</P>
+<P>常有 欲以观其徼(jiào)</P>
+<P>此两者 同出而异名 同谓之玄</p>
+<p>玄之又玄 众妙之门</P>
 
 let solutionEntry = htmlSolution;
 
@@ -81,9 +81,9 @@ textarea.onkeyup = function () {
   // not the solution, so that solution is not saved over the user code
   if (solution.value === "显示答案") {
     userEntry = textarea.value;
-  } else {
+    } else {
     solutionEntry = textarea.value;
-  }
+    }
 
   updateCode();
-};
+  };
