@@ -1,0 +1,137 @@
+html {
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.a11y-label,
+.playable-buttons {
+  margin: 0;
+  text-align: right;
+  font-size: 0.9rem;
+  width: 95%;
+}
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(123, 255, 0);
+  border-radius: 50%;
+
+  offset-path: path("M10 85 Q 480 10, 960 85 T 1840 85");
+  offset-distance: 0%;
+
+  animation: red-ball 10s linear alternate infinite;
+}
+@keyframes red-ball {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+.path1 {
+  stroke-dasharray: 1900;
+  stroke-dashoffset: 40;
+  animation: dash 4s linear infinite;
+}
+.path2 {
+  stroke-dasharray: 1880;
+  stroke-dashoffset: 1880;
+  animation: dash2 4s linear infinite;
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1920;
+  }
+  to {
+    stroke-dashoffset: 40;
+  }
+}
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 1840;
+  }
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+.wrapper {
+  width: 620px;
+  height: 110px;
+  margin: 0;
+  padding: 10px;
+  border: 6px solid mediumturquoise;
+}
+
+body {
+  margin: 10px;
+  background: #d3d8da;
+}
+
+p {
+  background-image: url("../image/dinosaur.png");
+}
+
+table {
+  border-collapse: collapse;
+  border: 4px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td,
+th {
+  border: 2px solid rgb(190, 190, 190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(138, 132, 224);
+}
+
+td {
+  text-align: center;
+}
+
+/* tr:nth-child(even) td {
+  background-color: rgb(117, 214, 121);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(237, 240, 68);
+} */
+
+caption {
+  padding: 10px;
+}
+
+tbody {
+  font-size: 90%;
+  font-style: italic;
+}
+
+tfoot {
+  font-weight: bold;
+}
+#MyRect {
+  stroke: rgb(144, 42, 212);
+  fill: rgb(241, 250, 117);
+  fill-opacity: "0.5";
+  stroke-opacity: "0.8";
+}
+#rect1 {
+  fill: url(#Gradient1);
+}
+.stop1 {
+  stop-color: red;
+}
+.stop2 {
+  stop-color: black;
+  stop-opacity: 0;
+}
+.stop3 {
+  stop-color: blue;
+}
